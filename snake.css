@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+:root
+{
+    --cellHeight: 12px;
+    --cellWidth: 12px;
+    --rows: 36;
+    --columns: 56;
+}
+body
+{
+    background-color: rgba(0, 0, 0, 0.15);
+    height: 97vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: Balsamiq Sans;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(var(--columns),var(--cellWidth));
+    grid-template-rows: repeat(var(--rows),var(--cellHeight));
+    background-color: black;
+}
+.cell
+{
+    border-radius: 0%;
+    background-color: black;
+}
+.snake
+{
+    border: 0.5px solid rgba(0, 0, 0, 0.7);
+    border-radius: 0%;
+    background-color: aqua;
+}
+.food
+{
+    border-radius: 50%;
+    background-color:white;
+}
+.footer
+{
+    display: flex;
+    justify-content: center;
+}
+.play-again
+{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Balsamiq Sans;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+.play-again:hover
+{
+    
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.game-over
+{
+    display: none;
+    font-family: Balsamiq Sans;
+    font-size: 50px;
+}
+.score
+{
+    width: 97vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.score-div
+{
+    text-align: center;
+    font-size: 40px;
+}
+.header
+{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
